@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><layout1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Segoe UI' , sans-serif;
+            background-color: #fd6ef;
+            margin: 0;
+        }
+        header{
+            background-color: #8b5e3c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            
+
+        }
+        nav{
+            text-align: center;
+            background-color: #e0b084;
+            padding: 10px;
+        }
+        nav a{
+           margin: 0 15px;
+           text-decoration: none;
+           color: #4d3319;
+            
+            
+            
+        }
+        main{
+             max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        form{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 15px;
+        }
+        footer{
+            background-color: #8b5e3c;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        input, select, textarea, button {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+
+        }
+        button{
+            background-color: #8b5e3c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover{
+                background-color: #a66a42;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2>*Assyrian Heritage Registration</h2><br>
+        <h4>Preserve our legacy join the cultural record</h4>
+    </header>
+    <nav>
+        <a href="#">home</a>
+        <a href="#">Archives </a>
+        <a href="#">contact</a>
+    </nav>
+    <main>Registration Your Assyrian Roots
+        <form action="/submit" method="post"
+        enctype="multipart/form-data"
+        autocomplete="on" novalidate>
+    
+    <label for="fullname">full NAME:</label>
+    <input type="text" id="fullname" name="fullname"
+placeholder="Ashurbanipal" required maxlength="100" minlength="2"
+autofocus>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email"
+name="email" required autocomplete="email">
+
+    <label for="birthdate">Birth Date:</label>
+<input type="date" id="birthdate"
+name="birthdate" required>
+
+<label for="photo">Upload Family Crest:</label>
+<input type="file" id="photo"
+name="photo" accept="image/*">
+
+<label for="password">Create password:</label>
+<input type="password" id="password"
+name="birthdate" required minlength="6">
+
+<label for="color">Favorite Traditional Color:</label>
+<input type="color" id="color"
+name="color" value="#8b5e3c">
+
+<label for="range">Cultural knowledge:</label>
+<input type="range" id="range"
+name="knowledge" min="0" max="10" value="5" step="1">
+
+<label for="agree">Agree To Share Your Data:</label>
+<input type="checkbox" id="agree"
+name="agree" required>
+
+<label for="your website ">your website :</label>
+<input type="your website" id="https://yourheritage.com"
+name="your website" required>
+
+
+
+<label for="Generation Traced(0-10): ">Generations Traced: </label>
+<input type="generation traced" id="Generation traced"
+name="Generation traced" required>
+
+
+
+<label for="gender">Gender:</label>
+<select id="gender" name="gender" required>
+    <option value="">--select--</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+</select>
+
+<label for="desc">Tell us about your ancestry:</label>
+<textarea id="desc" name="desc" rows="4" maxlength="500"></textarea>
+
+<label for="language">Preferred Language:</label>
+<input list="language" id="language" name="language">
+<datalist id="language">
+    <option value="Assyrian Neo-Aramaic">
+        <option value="Arabic">
+        <option value="English">
+        </datalist>
+        </option>
+        </option>
+    </option>
+</datalist> 
+
+<label for="submit">Submit:</label>
+<button type="submit" formaction="/custom-submit"
+formmethod="post">Submit</button>
+    </main>
+    <footer>@ 2025 Assyrian Cultural Registry. All right reserved.</footer>
+
+</body>
+</html>
